@@ -1,4 +1,4 @@
 .env
-./plans
+plans/
 raw.md
 raw.php
