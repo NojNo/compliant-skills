@@ -1,6 +1,6 @@
 ---
 name: imprint-reviewer
-description: Reviews an existing German Impressum for legal compliance gaps under DDG § 5, MStV § 18, and bundled obligations (VSBG, ODR), flags missing or malformed fields, and suggests corrective text.
+description: Audits an existing German Impressum for compliance gaps under DDG § 5, MStV § 18, VSBG, and ODR, and suggests corrective text. Informational only — not a substitute for legal advice from a licensed German attorney.
 ---
 
 # imprint-reviewer

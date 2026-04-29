@@ -1,6 +1,6 @@
 ---
 name: imprint-creator
-description: Guides step-by-step through creating a legally compliant German Impressum for a new business, covering DDG § 5, MStV § 18, VAT ID, trade register, editorial responsibility, and consumer dispute resolution.
+description: Guides step-by-step through creating a German Impressum covering DDG § 5, MStV § 18, VAT ID, trade register, and consumer dispute resolution. Informational only — not a substitute for legal advice from a licensed German attorney.
 ---
 
 # imprint-creator

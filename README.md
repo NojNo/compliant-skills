@@ -2,6 +2,8 @@
 
 Two Claude Code skills for creating and reviewing a legally compliant German Impressum (DDG § 5).
 
+> **Legal disclaimer:** These skills provide informational guidance based on public German law. They do not constitute legal advice and are not a substitute for review by a licensed German attorney (Rechtsanwalt).
+
 ## Skills
 
 ### imprint-creator
@@ -21,6 +23,3 @@ npx skills add NojNo/compliant-skills/tree/main/skills/imprint-creator
 npx skills add NojNo/compliant-skills/tree/main/skills/imprint-reviewer
 ```
 
-## Legal disclaimer
-
-These skills provide informational guidance based on public German law (DDG § 5, MStV § 18 Abs. 2, VSBG §§ 36–37, ODR-Verordnung Art. 14). They do not constitute legal advice. Have your Impressum reviewed by a licensed German attorney (Rechtsanwalt) before publishing.
