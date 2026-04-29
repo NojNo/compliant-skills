@@ -38,32 +38,35 @@ npx skills add <github-user>/compliant-skills
 
 ## Skill 1: imprint-creator
 
-**Purpose:** Interview the user and produce a ready-to-publish German Impressum that satisfies TMG § 5 and DDSG requirements.
+**Purpose:** Interview the user and produce a ready-to-publish German Impressum that satisfies DDG § 5 requirements.
 
 ### SKILL.md frontmatter
 
 ```yaml
 ---
 name: imprint-creator
-description: Guides step-by-step through creating a legally compliant German Impressum (Impressumspflicht) for a new business, covering TMG § 5, VAT ID, trade register, and editorial responsibility.
+description: Guides step-by-step through creating a legally compliant German Impressum (Impressumspflicht) for a new business, covering DDG § 5, VAT ID, trade register, and editorial responsibility.
 ---
 ```
 
 ### Instruction content to include
 
-- Explain the legal basis: Telemediengesetz (TMG) § 5 for commercial websites; RStV § 55 for editorial/journalistic content.
+- Explain the legal basis: Digitale-Dienste-Gesetz (DDG) § 5 for all commercial digital services; MStV § 18 for editorial/journalistic content.
 - Ask the user a structured set of questions:
   1. Legal form of the business (Einzelunternehmen, GbR, UG, GmbH, AG, etc.)
   2. Full legal name of the owner / company name
   3. Physical street address (no PO box — legally required)
-  4. Email address (must be reachable within 24 hours per TMG)
-  5. Phone number (strongly recommended; some courts require it)
+  4. Email address enabling rapid electronic contact and direct communication (DDG § 5 Abs. 1 Nr. 2)
+  5. Phone number (strongly recommended; some courts require it for "direct communication")
   6. Umsatzsteuer-ID (VAT ID) if registered — format: DE + 9 digits
-  7. Handelsregisternummer + Registergericht if applicable (GmbH, UG, AG require this)
-  8. Vertretungsberechtigter (authorized representative) for companies
-  9. Aufsichtsbehörde (supervisory authority) if operating in regulated industries (e.g., financial services, healthcare)
-  10. Berufshaftpflicht / professional body membership if applicable
-  11. Verantwortlicher i.S.d. § 55 Abs. 2 RStV if publishing journalistic content
+  7. Wirtschafts-Identifikationsnummer if no VAT ID applies
+  8. Handelsregisternummer + Registergericht if applicable (GmbH, UG, AG require this)
+  9. Vertretungsberechtigter (authorized representative) for companies
+  10. Aufsichtsbehörde (supervisory authority) if operating in regulated industries (e.g., financial services, healthcare)
+  11. Berufskammer membership, official professional title, and applicable professional regulations if applicable
+  12. Is the company currently in liquidation or dissolution? (must be disclosed per DDG § 5)
+  13. Is this an audiovisual media service? If yes: country of establishment + competent regulatory authority
+  14. Verantwortlicher i.S.d. § 18 Abs. 2 MStV if publishing journalistic/editorial content
 - After gathering answers, output the Impressum in structured German legal text.
 - Flag any fields the user left blank that are legally required.
 - Remind user this is a starting point and legal review is recommended for edge cases.
@@ -79,23 +82,27 @@ description: Guides step-by-step through creating a legally compliant German Imp
 ```yaml
 ---
 name: imprint-reviewer
-description: Reviews an existing German Impressum for legal compliance gaps under TMG § 5 and RStV § 55, flags missing or malformed fields, and suggests corrective text.
+description: Reviews an existing German Impressum for legal compliance gaps under DDG § 5 and MStV § 18, flags missing or malformed fields, and suggests corrective text.
 ---
 ```
 
 ### Instruction content to include
 
 - Ask the user to paste the full Impressum text (or provide a file path).
-- Check for the presence and validity of each required field:
+- Check for the presence and validity of each required field per DDG § 5:
   - Full name / company name
   - Street address (no PO box)
-  - Reachable email
+  - Email enabling rapid electronic contact (DDG § 5 Abs. 1 Nr. 2)
   - Phone number
-  - VAT ID format (DE + 9 digits) if mentioned
+  - VAT ID (DE + 9 digits) or Wirtschafts-Identifikationsnummer
   - Handelsregister entry if business type requires it
   - Representative name for registered companies
   - Supervisory authority for regulated professions
-  - Editorial responsibility clause if applicable
+  - Professional chamber, title, and regulations if applicable
+  - Liquidation/dissolution status if applicable
+  - Country of establishment + regulatory authority for audiovisual providers
+  - Editorial responsibility clause (MStV § 18) if applicable
+- Check accessibility: is the Impressum "leicht erkennbar und unmittelbar erreichbar" (DDG § 5 Abs. 1 opening clause)? Flag if it is buried or hard to find.
 - Output a structured gap report:
   - Status per field: OK / Missing / Malformed
   - For each gap: explanation of the legal risk and suggested replacement text
@@ -142,7 +149,7 @@ description: Reviews an existing German Impressum for legal compliance gaps unde
 
 ## Legal Disclaimer to Include in Both Skills
 
-> This skill provides informational guidance based on public German law (TMG § 5, RStV § 55). It does not constitute legal advice. Have your Impressum reviewed by a licensed German attorney (Rechtsanwalt) for your specific business situation.
+> This skill provides informational guidance based on public German law (Digitale-Dienste-Gesetz DDG § 5, Medienstaatsvertrag MStV § 18). It does not constitute legal advice. Have your Impressum reviewed by a licensed German attorney (Rechtsanwalt) for your specific business situation.
 
 ---
 
