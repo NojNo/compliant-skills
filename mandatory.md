@@ -23,7 +23,9 @@ Employee and influencer profiles are considered commercial if used to communicat
 
 - Business type: Freiberufler, Unternehmen, or other commercial activity
 - Full legal name of owner or company (all given names spelled out; include full legal form, e.g. "Mustermann UG (haftungsbeschränkt)", "Peter Müller und Steve Schneider GbR", "Freunde der Zukunft e.V.")
-- Street address — no PO box
+- Street address — must be a ladungsfähige Adresse (an address where legal documents can be served); no PO box
+  - Coworking spaces are acceptable if post can actually be received there
+  - Virtual offices are only acceptable under narrow conditions: physical signage, letterbox, and organised mail receipt; personal presence is not required if an effective authorisation to receive mail exists (BGH V ZR 210/22, 07.07.2023)
 - Country of operation
 
 ---
@@ -31,8 +33,8 @@ Employee and influencer profiles are considered commercial if used to communicat
 ## 2. Contact (Kontaktmöglichkeiten)
 
 - **Email address** — must enable rapid electronic contact (DDG § 5 Abs. 1 Nr. 2); monitored regularly during business hours
-- **Phone number** — mandatory for consumer-facing businesses; alternatively a contact form URL or website chat is accepted if responses are prompt
-- **Fax** *(optional since 28.05)*
+- **Phone number** — strongly recommended but not a strict statutory requirement. The ECJ has ruled that a phone number is not required if another fast means of communication is offered (ECJ C-649/17, Amazon EU, 10.07.2019). German case law is inconsistent — including a phone number remains the safer choice.
+- **Fax** *(optional since 14 May 2024, the date the DDG entered into force)*
 - **Contact form URL** *(optional, unless used as substitute for phone)*
 - **Weitere Kontaktmöglichkeiten** *(optional)* — messenger services that allow correspondence saved on a permanent data carrier (e.g. WhatsApp Business number); list platform and contact detail
 
@@ -44,14 +46,14 @@ Required for companies, associations, and authorities:
 
 - Full name(s) and function(s) of authorized representative(s) (e.g. "Max Mustermann (Geschäftsführer)")
 - Note: sole traders (Einzelunternehmen) must use "Inhaber", not "Geschäftsführer"
-- If another legal entity is the authorized representative, the chain must be traced to a natural person (e.g. "Komplementär XYZ GmbH ... Vertretungsberechtigt: Max Müller (Geschäftsführer)")
+- If another legal entity is the authorized representative, the chain must be traced to a natural person. This situation arises specifically in a GmbH & Co. KG structure (e.g. "Persönlich haftende Gesellschafterin: Komplementär XYZ GmbH, Musterweg 1, 12345 Musterstadt — Vertretungsberechtigt: Max Müller (Geschäftsführer)")
 
 ---
 
 ## 4. Business Information (Angaben zum Unternehmen)
 
-- **Umsatzsteuer-Identifikationsnummer (USt-ID)** — only if assigned; format DE + 9 digits. Required for cross-border EU business.
-- **Wirtschafts-Identifikationsnummer (W-IdNr)** — only if assigned. Not the same as personal tax ID (IdNr) or Steuernummer (~99/1234/12345) — those must NOT be disclosed.
+- **Umsatzsteuer-Identifikationsnummer (USt-ID)** — only if assigned; format: DE followed by 9 digits. Required for cross-border EU business.
+- **Wirtschafts-Identifikationsnummer (W-IdNr)** — only if assigned (§ 5 Abs. 1 Nr. 6 DDG: "soweit vorhanden"); format: DE followed by 9 digits, a hyphen, and a 5-digit distinguishing suffix. The disclosure obligation arises immediately upon notification by the BZSt (Bundeszentralamt für Steuern) — the December 2026 deadline applies only to administrative use in correspondence with tax authorities, not to the Impressum. Not the same as personal tax ID (IdNr) or Steuernummer (format ~99/1234/12345) — those must NOT be disclosed.
 - **Geschäftsbereich** — business area; required in Austria, optional in Germany
 - **AGB link** *(optional)* — URL to general terms and conditions if published online
 
@@ -63,35 +65,42 @@ Required if the entity is legally registered (DDG § 5 Abs. 1 Nr. 4):
 
 - Register type:
   - Handelsregister
+  - Gesellschaftsregister (eGbR — GbRs voluntarily registered under MoPeG from 01.01.2024 receive a registration number that must be disclosed analogously to HRB/PR entries; registration is de facto required for GbRs acquiring real estate, holding GmbH shares, or conducting other registrable transactions)
   - Vereinsregister
   - Partnerschaftsregister
   - Genossenschaftsregister
   - Unternehmensregister
   - Firmenbuch (Österreich)
-- Name of the register / Registergericht (e.g. "Amtsgericht Beispielsstadt")
-- Registration number (e.g. "HRB 1234")
+- Name of the register / Registergericht (e.g. "Amtsgericht Musterstadt")
+- Registration number (e.g. "HRB 12345")
 
 ---
 
-## 6. Licensed / Regulated Activities (Aufsichtsbehörde)
+## 6. State-Licensed Activities (Genehmigungspflichtige Tätigkeiten)
 
-Required if the business needs a governmental or state license (DDG § 5 Abs. 1 Nr. 3):
+**Trigger:** the business requires a state or governmental licence to operate (DDG § 5 Abs. 1 Nr. 3).
 
-Examples: Gaststätten, Inkassobüros, Taxiunternehmen, regulated professions (doctors, lawyers, pharmacists)
+Examples: Gaststätten, Inkassobüros, Taxiunternehmen, Pflegedienste, Waffenhändler.
 
+This block does NOT apply to regulated professions — those are covered separately in Section 7.
+
+Required fields:
 - Name and full address of the competent supervisory authority (Aufsichtsbehörde)
 - Website URL of the supervisory authority *(optional but recommended)*
 
-Note: The supervisory authority is not always the same body that issued the licence — confirm with the licensing body.
+Note: The supervisory authority is not always the same body that issued the licence — confirm with the licensing body if uncertain.
 
 ---
 
 ## 7. Regulated Professions (Reglementierte Berufe)
 
-Required for regulated professions (EU-Richtlinie 2005/36/EG):
+**Trigger:** the person holds a professional licence granted under EU-Richtlinie 2005/36/EG.
+
+This block does NOT apply to state-licensed trade activities — those are covered separately in Section 6. These are two distinct legal obligations with separate fieldsets.
 
 Covered professions include: Altenpfleger/in, Apotheker/in, Architekt/in, Arzt/Ärztin, Erzieher/in, Gesundheits- und Krankenpfleger/in, Heilpraktiker/in, Innenarchitekt/in, Kraftfahrzeugsachverständige/r, Landschaftsarchitekt/in, Notar/in, Physiotherapeut/in, Rechtsanwalt/Rechtsanwältin, Steuerberater/in, Wirtschaftsprüfer/in, Zahnarzt/Zahnärztin, and others.
 
+Required fields:
 - **Gesetzliche Berufsbezeichnung** — legal professional title (preset list or free text)
 - **Country where the title was granted** — Deutschland, Österreich, Schweiz, Frankreich, Niederlande, Spanien, Polen, Großbritannien, or other
 - **Kammer membership** (if applicable):
@@ -114,17 +123,26 @@ Note: Mandatory for some professions (architects, doctors, lawyers). Optional fo
 
 ## 9. Editorial / Journalistic Content (MStV § 18)
 
-Required if the online presence provides regular, public-facing reporting or commentary (blogs, news sites, Facebook pages with regular news-style posts):
+**Trigger:** the online offering is journalistically and editorially designed with a press-like influence on public opinion formation (MStV § 18 Abs. 2). The threshold is high — standard company blogs, social media product posts, and sporadic commentary do not qualify. The content must be editorially structured and comparable in nature to press or broadcast journalism.
 
+Required fields:
 - Full name and address of the person responsible for content (Verantwortlicher i.S.d. § 18 Abs. 2 MStV)
 - If same address as operator: "(Adresse wie oben)" is sufficient
 - Multiple responsible persons allowed, e.g. "Tony Stark (Ressort Technik), Peter Parker (Ressort Naturwissenschaften)"
+
+The named person must meet all four personal prerequisites (MStV § 18 Abs. 2):
+1. Permanent place of residence in Germany
+2. Full legal capacity (unbeschränkte Geschäftsfähigkeit)
+3. Has not lost the right to hold public office by court ruling
+4. Unlimited criminal prosecutability in Germany
 
 ---
 
 ## 10. Audiovisual Media Services (DDG § 5 Abs. 1 Nr. 8)
 
-Required for YouTube channels, Twitch, TikTok, Instagram Reels, and other commercial video content platforms since end of 2020.
+Required for commercial operators of YouTube channels, Twitch, TikTok, Instagram Reels, and comparable video platforms since end of 2020 — but only above indicative thresholds. Not every commercial channel is automatically affected.
+
+Indicative thresholds (guideline, not statutory): more than 5 videos AND/OR more than 500 subscribers AND/OR more than 500,000 total views. Below these thresholds the classification as an audiovisual media service is unlikely but not ruled out.
 
 Podcasts are excluded (audio only, not audiovisual).
 
