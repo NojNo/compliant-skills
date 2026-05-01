@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GDPR Audit Report",
+  "type": "object",
+  "required": [
+    "metadata",
+    "coverage",
+    "findings",
+    "decision_summary"
+  ]
+}

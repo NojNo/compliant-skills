@@ -1,0 +1,15 @@
+{
+  "role": "product",
+  "output_focus": "risk, ownership, priority",
+  "must_include": [
+    "plain-language risk",
+    "priority",
+    "owner_hint",
+    "next_action"
+  ],
+  "must_not_include": [
+    "raw control dumps",
+    "evidence tier detail",
+    "legal speculation"
+  ]
+}

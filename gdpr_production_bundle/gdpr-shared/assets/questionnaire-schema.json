@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GDPR Questionnaire Persistence",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "catalog_version_hash",
+    "generated_at",
+    "stage",
+    "self_reported",
+    "answers"
+  ]
+}
