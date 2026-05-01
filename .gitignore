@@ -1,4 +1,5 @@
 .env
+.claude/
 plans/
 raw.md
 raw.php
