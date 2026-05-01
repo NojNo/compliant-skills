@@ -1,0 +1,9 @@
+{
+  "name": "compliant-plugin",
+  "description": "GDPR compliance skills for auditing public-facing websites, apps with IAM, imprint creation and review, and GDPR guidance.",
+  "version": "1.0.0",
+  "author": {
+    "name": "NojNo"
+  },
+  "repository": "https://github.com/NojNo/compliant_plugin"
+}
