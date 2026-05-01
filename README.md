@@ -24,7 +24,7 @@ Advisory implementation guide for engineers, product managers, and DPOs. Works t
 Audits a public-facing website or repository for GDPR compliance gaps across transparency, consent, data subject rights, and security. Produces control findings and a prioritised remediation report.
 
 ### gdpr-auditor-app
-Authenticated GDPR audit of a live application using test credentials. Covers public surface, authenticated flows, and document intake. Includes an optional legal review packet formatted for counsel or DPO review.
+Authenticated GDPR audit of a live application using test credentials. Covers public surface, authenticated flows, and document intake. Includes an optional Legal Feedback Brief for counsel or DPO review.
 
 ---
 

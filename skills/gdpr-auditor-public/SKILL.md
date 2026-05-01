@@ -109,10 +109,10 @@ Output a prioritised remediation table, grouped by severity:
 - **Engineer:** concrete implementation steps, evidence provenance, test hints. Omit bare legal citations as primary output.
 - **Product:** risk framing, owner hint, next action, priority. Omit raw evidence detail.
 - **DPO:** legal sources, evidence tier, confidence, observation, limitations. Omit speculative implementation detail.
-- **Counsel:** A6 legal review packet only (see below). No remediation language, no pass/fail claims.
+- **Counsel:** Legal Feedback Brief only (see below). No remediation language, no pass/fail claims.
 
-**A6 legal review packet (counsel / DPO only):**
-Route a control to A6 only when all four conditions are true:
+**Legal Feedback Brief (counsel / DPO only):**
+Include a control in the Legal Feedback Brief only when all four conditions are true:
 - `needs_legal_review == true`
 - `routes_to_legal_review_if_triggered == true`
 - `enforceability != "technical"`

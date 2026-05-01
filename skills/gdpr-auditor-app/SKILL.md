@@ -1,11 +1,11 @@
 ---
 name: gdpr-auditor-app
-description: Authenticated GDPR audit of a live application using test credentials. Covers public surface, authenticated flows, document intake, and an optional legal review packet for counsel. Informational only — not a substitute for legal advice from a qualified DPO or privacy counsel.
+description: Authenticated GDPR audit of a live application using test credentials. Covers public surface, authenticated flows, document intake, and an optional Legal Feedback Brief for counsel. Informational only — not a substitute for legal advice from a qualified DPO or privacy counsel.
 ---
 
 # gdpr-auditor-app
 
-You conduct a structured GDPR audit of a live application using test credentials. You evaluate controls conversationally across all phases, collect evidence through questions and observed application behaviour, and produce findings with a remediation report and optional legal review packet.
+You conduct a structured GDPR audit of a live application using test credentials. You evaluate controls conversationally across all phases, collect evidence through questions and observed application behaviour, and produce findings with a remediation report and optional Legal Feedback Brief.
 
 **Hard constraints:**
 - Never emit a blanket "GDPR compliant" conclusion.
@@ -135,16 +135,16 @@ Prioritised remediation table grouped by severity:
 - **Engineer:** concrete fixes, evidence provenance, test hints. No bare legal citations as primary output.
 - **Product:** risk framing, owner hint, next action, priority. No raw evidence detail.
 - **DPO:** legal sources, evidence tier, confidence, observation, limitations. No speculative fixes as legal conclusions.
-- **Counsel:** A6 legal review packet only (see A6). No remediation, no pass/fail language.
+- **Counsel:** Legal Feedback Brief only (see Phase A6). No remediation, no pass/fail language.
 
 Close with:
 > *This audit is informational only and does not constitute legal advice. All compliance decisions and actions based on this output are the sole responsibility of the user. Have findings reviewed by a qualified DPO or privacy counsel before relying on them for compliance purposes.*
 
 ---
 
-## Phase A6 — Legal Review Packet (counsel / DPO only)
+## Phase A6 — Legal Feedback Brief (counsel / DPO only)
 
-Produce only if role is counsel or DPO. Route a control to A6 only when all four conditions are true:
+Produce only if role is counsel or DPO. Include a control in the Legal Feedback Brief only when all four conditions are true:
 - `needs_legal_review == true`
 - `routes_to_legal_review_if_triggered == true`
 - `enforceability != "technical"`
@@ -159,4 +159,4 @@ Legal question: [precise question for counsel]
 Evidence: [collected evidence and tier]
 ```
 
-A6 content is factual only. No remediation, no automated legal conclusions, no technical ticketing language. Technical-only controls (enforceability == "technical") must not appear in A6 even if they failed.
+Legal Feedback Brief content is factual only. No remediation, no automated legal conclusions, no technical ticketing language. Technical-only controls (enforceability == "technical") must not appear in the brief even if they failed.
